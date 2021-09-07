@@ -8,7 +8,7 @@ const categories = document.getElementById('categories').getElementsByClassName(
 
 console.log(`В разделе есть ${categories.length} категории`);
 
-for (category of categories) {
+for (let category of categories) {
   let categoryName = category.getElementsByTagName('h2')[0].textContent;
   let elementsOfCategory = category.getElementsByTagName('li');
   console.log(`Категория: ${categoryName}`);
